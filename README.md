@@ -4,3 +4,5 @@
 >
 > To access the contents of the project, create an account on [paperspace gradient](https://www.paperspace.com/gradient/notebooks) <br>
 to access the notebook
+>
+> Code on how the data was prepared can be found [here]().

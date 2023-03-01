@@ -1,0 +1,43 @@
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+
+train: /notebooks/train_data
+val: /notebooks/val_data
+
+# Classes
+
+nc: 18
+
+lr0: 0.01  # initial learning rate (SGD=1E-2, Adam=1E-3) 
+lrf: 0.01  # final OneCycleLR learning rate (lr0 * lrf) 
+momentum: 0.937  # SGD momentum/Adam beta1 
+weight_decay: 0.0005  # optimizer weight decay 5e-4 
+warmup_epochs: 3.0  # warmup epochs (fractions ok) 
+warmup_momentum: 0.8  # warmup initial momentum 
+warmup_bias_lr: 0.1  # warmup initial bias lr 
+box: 0.05  # box loss gain 
+cls: 0.5  # cls loss gain 
+cls_pw: 1.0  # cls BCELoss positive_weight 
+obj: 1.0  # obj loss gain (scale with pixels) 
+obj_pw: 1.0  # obj BCELoss positive_weight 
+
+
+names:
+  0: longitudinal_high
+  1: longitudinal_low
+  2: longitudinal_medium
+  3: grass
+  4: patch_high
+  5: manhole_high
+  6: transverse_high
+  7: transverse_low
+  8: transverse_medium
+  9: diag_high
+  10: diag_low
+  11: diag_medium
+  12: alligator_high
+  13: alligator_low
+  14: alligator_medium
+  15: block_low
+  16: block_high
+  17: block_medium
